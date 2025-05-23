@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 # Read phone numbers and names from the Excel file
-excel_file = "reso.xlsx"
+excel_file = "contacts.xlsx"  # Replace with your Excel file path
 df = pd.read_excel(excel_file)
 
 df.columns = df.columns.str.strip()  # Remove extra spaces in column names
@@ -37,15 +37,7 @@ def send_whatsapp_message(df, delay):
 
 
         
-        message = f""" Hi👋 I am Ritik Kumar
-💻 I create professional websites for businesses and personal use.
-📱 Fully mobile-friendly and modern design!
-
-🧑‍💻 Check out my work here:
-🌐 https://portfolio-frontend-beta-seven.vercel.app/
-
-📬 If you're interested, just send me a message.
-Thanks! 🙏😊"""
+        message = f""" Enter your message here"""
 
         print(f"Sending message to {name} ({number})...")
 
